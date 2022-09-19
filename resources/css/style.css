@@ -1,0 +1,36 @@
+* {
+    border: .5px solid red;
+}
+
+ /*Navegador*/
+ 
+header{
+    display: flex;
+    padding-right:24px;
+    padding-left: 24px;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+ .logo {
+    display: flex;
+    height: 32px;
+    align-items: center;
+}
+
+.titleLogo{
+    text-transform: uppercase;
+}
+.navegador{
+    display: flex;
+    list-style: none;
+    list-style-position: inside;
+    justify-content: right;
+    
+}
+
+.menuoption{
+    padding-left: 16px;
+}
+
+/*Contenido--Start*/
