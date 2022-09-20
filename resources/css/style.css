@@ -1,8 +1,10 @@
-* {
-    border: .5px solid red;
-}
 
  /*Navegador*/
+
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
  
 header{
     display: flex;
@@ -14,31 +16,48 @@ header{
     position: sticky;
     top: 0px;
     background-color: white;
+    border-bottom: 2px solid #E9DAC1;
 }
  .logo {
     display: flex;
     height: 32px;
     align-items: center;
+
 }
 
 .titleLogo{
     text-transform: uppercase;
+    color: #9ED2C6;
+    font-size: 32px;
 }
+
 .navegador{
     display: flex;
     list-style: none;
     list-style-position: inside;
     justify-content: right;
-    
+    text-decoration: none;    
 }
 
 .menuoption{
     padding-left: 16px;
 }
 
+a{
+    text-decoration: none;
+    color: #9ED2C6;
+    font-size: 24px;
+}
+
+a:hover{
+    font-size: 26px;
+    text-decoration: underline;
+}
+
 /*Contenido--Start*/
+
 .start{
-    background-color: rgb(163, 159, 159);
+    background-color:#E9DAC1;
     display: flex;
     padding: 32px 24px;
     justify-content: space-between;
@@ -51,51 +70,58 @@ header{
 }
 
 .invitation{
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#54BAB9
 }
-
 .inviTitle{
-font-weight: bold;
-
+    font-size: 32px;
 }
-
-
 
 #starterbutton{
-    border: 2px solid blue;
-    background-color: aqua;
+    border: 2px solid #54BAB9;
+    background-color: white;
     border-radius: 20px;
-    
     text-decoration: none;
     padding-top: 8px;
     padding-bottom: 8px;
     width: 80%;
     font-weight: bold;
 }
+
 /*moreInfo ---- comments*/
+
 .moreInfor{
-    padding: 32px 24px;
+    padding: 32px 0px 32px 24px;
     display: flex;
-    background-color: gainsboro;
+    border:2px solid #E9DAC1;
 }
 .comments{
     display: flex;
     flex-direction: column-reverse;
     width: 60%;
     padding-right: 24px;
-
+    border-right: 2px solid #E9DAC1;
 }
 .quotes{
     padding: 32px 0px;
+    color: #54BAB9;
 }
+
+.quotes h1{
+    font-weight: bolder;
+}
+
 .sections{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40%;
+    color: #54BAB9;
+    text-shadow: 3px black;
 }
 
 .info{
@@ -106,7 +132,12 @@ font-weight: bold;
 }
 .infocontent{
     display: flex;
+    background-color: #F7ECDE;
 }
+.infocontent:hover{
+    background-color: #E9DAC1;
+}
+
 
 .sections img {
     width: 35%;
@@ -114,34 +145,71 @@ font-weight: bold;
 }
 .infotitle{
     margin: 0;
-    font-size: 32px;
     font-weight: bolder;
 }
 .infodatelle{
     margin: 0px;
-    padding: 8px;
+    padding: 8px 0px;
 }
 .infolinks{
     margin: 0px;
 }
+.infolinks a{
+    font-size: 16px;
+    color: #54BAB9;
+}
+
 
 /*learning Programs*/
+.learningPrograms {
+    background-color: #E9DAC1;
+    padding: 32px 72px 32px 72px;
+}
+
 .lerningblocks{
     display: flex;
     flex-wrap: wrap;
-    padding: 32px 72px 32px 72px;
+    justify-content: center;
+   
 }
 .learningPrograms h1 {
+    color: #54BAB9;
+    font-size: 32px;
     text-align: center;
     width: 100%;
 }
 
 .program {
-    width: 30%;
+    width: 25%;
     text-align: center;
+    background-color: #F7ECDE;
+    margin: 15px;
 }
+.program:hover {
+    cursor: pointer;
+    border: 2px solid#54BAB9;
+    text-align: center;
+    background-color: #E9DAC1;
+    margin: 15px;
+    font-size: 18px;
+}
+
 .program img{
     width: 100%;
+}
+.programInfo{
+    color: #54BAB9;
+    padding: 16px 16px 24px 16px;    
+}
+.programInfo p{
+
+    margin: 0px;
+    padding-top: 8px;
+}
+
+.programTitle{
+    margin: 0px;
+ 
 }
 /*thesis*/
 
@@ -154,6 +222,8 @@ font-weight: bold;
 
 .thesis h1{
     text-align: center;
+    width: 100%;
+
 }
 
 .thesisblocks video{
