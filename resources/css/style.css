@@ -11,6 +11,9 @@ header{
     justify-content: space-between;
     height: 64px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
 }
  .logo {
     display: flex;
@@ -34,3 +37,111 @@ header{
 }
 
 /*Contenido--Start*/
+.start{
+    background-color: rgb(163, 159, 159);
+    display: flex;
+    padding: 32px 24px;
+    justify-content: space-between;
+
+}
+
+.start img {
+    width: 60%;
+    padding-right: 24px;
+}
+
+.invitation{
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.inviTitle{
+font-size: 52px;
+font-weight: bold;
+
+}
+
+.inviContent{
+    font-size: 24px;
+}
+
+#starterbutton{
+    border: 2px solid blue;
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 80%;
+    font-weight: bold;
+}
+/*moreInfo ---- comments*/
+.moreInfor{
+    padding: 32px 24px;
+    display: flex;
+    background-color: gainsboro;
+}
+.comments{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 60%;
+    padding-right: 24px;
+
+}
+.quotes{
+    padding: 32px 0px;
+}
+.sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    justify-content: center;  
+}
+.infocontent{
+    display: flex;
+}
+
+.sections img {
+    width: 35%;
+    padding: 16px;
+}
+.infotitle{
+    margin: 0;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.infodatelle{
+    margin: 0px;
+    padding: 8px;
+}
+.infolinks{
+    margin: 0px;
+}
+
+/*learning Programs*/
+.lerningblocks{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 72px 32px 72px;
+}
+.learningPrograms h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.program {
+    width: 30%;
+    text-align: center;
+}
+.program img{
+    width: 100%;
+}
