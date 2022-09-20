@@ -162,3 +162,21 @@ font-weight: bold;
 .thesisblocks video{
 width: 100%;
 }
+
+/*footer*/
+.footer{
+    display: flex;
+    padding-right:24px;
+    padding-left: 24px;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+    background-color: white;
+}
+.termPolitics{
+    display: flex;
+    list-style: none;
+    list-style-position: inside;
+    justify-content: right;
+    
+}
