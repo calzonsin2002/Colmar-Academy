@@ -43,14 +43,15 @@ header{
     padding-left: 16px;
 }
 
-a{
+.menuoption a, #starterbutton
+{
     text-decoration: none;
     color: #9ED2C6;
-    font-size: 24px;
+    font-size: 18px;
 }
 
-a:hover{
-    font-size: 26px;
+.menuoption a:hover, #starterbutton:hover{
+    font-size: 20px;
     text-decoration: underline;
 }
 
@@ -136,6 +137,7 @@ a:hover{
 }
 .infocontent:hover{
     background-color: #E9DAC1;
+    cursor: pointer;
 }
 
 
@@ -215,35 +217,54 @@ a:hover{
 
 .thesisblocks{
     display: flex;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #E9DAC1;
 }
 .thesisVideo{
     width: 60%;
 }
 
 .thesis h1{
+    padding: 32px;
     text-align: center;
     width: 100%;
+    font-size: 32px;
+    color: #54BAB9;
 
 }
 
 .thesisblocks video{
     width: 100%;
+
 }
 
 /*footer*/
 .footer{
+    font-size: 12px;
     display: flex;
-    padding-right:24px;
-    padding-left: 24px;
+    padding:16px 24px 0px 24px;
     justify-content: space-between;
     height: 64px;
     align-items: center;
     background-color: white;
+    margin: 0px;
+    
 }
+
 .termPolitics{
     display: flex;
     list-style: none;
     list-style-position: inside;
     justify-content: right;
+    margin: 0px;
+
+}
+.termPolitics a {
+    padding-left: 16px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
     
 }
+
