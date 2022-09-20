@@ -58,20 +58,17 @@ align-items: center;
 }
 
 .inviTitle{
-font-size: 52px;
 font-weight: bold;
 
 }
 
-.inviContent{
-    font-size: 24px;
-}
+
 
 #starterbutton{
     border: 2px solid blue;
     background-color: aqua;
     border-radius: 20px;
-    font-size: 24px;
+    
     text-decoration: none;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -160,7 +157,7 @@ font-weight: bold;
 }
 
 .thesisblocks video{
-width: 100%;
+    width: 100%;
 }
 
 /*footer*/
