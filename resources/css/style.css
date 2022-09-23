@@ -1,8 +1,13 @@
 
  /*Navegador*/
 
+*{
+    border: 1px solid red;
+}
+
 html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
 
  }
  
@@ -12,6 +17,7 @@ header{
     padding-left: 24px;
     justify-content: space-between;
     height: 64px;
+    margin: 0px;
     align-items: center;
     position: sticky;
     top: 0px;
@@ -47,12 +53,42 @@ header{
 {
     text-decoration: none;
     color: #9ED2C6;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .menuoption a:hover, #starterbutton:hover{
     font-size: 20px;
     text-decoration: underline;
+}
+/*Navegador mobil */
+.navegadorMobil{
+    display: none;
+}
+@media only screen and (min-width: 200px) and (max-width: 770px) {   
+
+    .logo,
+    .headerRight{
+         display:none       
+    }   
+    .navegadorMobil{
+        display:contents;
+        justify-content: space-around;
+    }
+}
+
+/*Contenido--Startmobile*/
+@media only screen and (min-width: 200px) and (max-width: 770px) {   
+
+    .start{
+        display: flex;
+        flex-direction: column;
+    }
+    .start img{
+        display: none;
+
+    }
+
+
 }
 
 /*Contenido--Start*/
@@ -93,10 +129,12 @@ header{
     font-weight: bold;
 }
 
+
+
 /*moreInfo ---- comments*/
 
 .moreInfor{
-    padding: 32px 0px 32px 24px;
+    
     display: flex;
     border:2px solid #E9DAC1;
 }
@@ -104,7 +142,7 @@ header{
     display: flex;
     flex-direction: column-reverse;
     width: 60%;
-    padding-right: 24px;
+    padding: 32px 24px;
     border-right: 2px solid #E9DAC1;
 }
 .quotes{
@@ -122,7 +160,7 @@ header{
     align-items: center;
     width: 40%;
     color: #54BAB9;
-    text-shadow: 3px black;
+    padding-top: 32px;
 }
 
 .info{
@@ -238,18 +276,27 @@ header{
     width: 100%;
 
 }
-
-/*footer*/
-.footer{
-    font-size: 12px;
+.thesissections{
     display: flex;
-    padding:16px 24px 0px 24px;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    color: #54BAB9;
+}
+.thesissections img {
+    width: 35%;
+    padding: 16px;
+}
+/*footer*/
+.foot{
+    
+    display: flex;
+    padding: 16px 24px 0px 24px;
     justify-content: space-between;
     height: 64px;
     align-items: center;
     background-color: white;
     margin: 0px;
-    
 }
 
 .termPolitics{
@@ -258,13 +305,18 @@ header{
     list-style-position: inside;
     justify-content: right;
     margin: 0px;
-
+    text-decoration: none;
+    
 }
 .termPolitics a {
     padding-left: 16px;
-    font-size: 12px;
+    
     text-decoration: none;
     color: black;
     
 }
-
+.termPolitics a:hover {
+    font-size: 18px;
+    color:gray;
+    
+}
